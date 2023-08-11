@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paragraph example</title>
+</head>
+<style>
+
+ h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+ }   
+    
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+section {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+p {
+    text-align: center;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input {
+    text-align: center;
+    font-size: 40px;
+}
+
+button.savebtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.savebtn:hover {
+  background-color: #45a049;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+<body>
+    <header>
+        <h1>WHEREDOCTOR</h1>
+        <h2>ACCOUNT DETAILS</h2>
+    </header>
+    <section>
+        Please fill in this form to save your details.
+    <section\>
+        
+    <hr>
+    <div class = "center"> 
+    <p><label for="fullname"><b>Full Name:</b></label></p>
+    <input type="" placeholder="Enter Full Name" name="fullname" required>
+
+    <p><label for="nric"><b>NRIC:</b></label></p>
+    <input type="" placeholder="Enter NRIC" name="nric" required>
+
+    <p><label for="hpno"><b>Hp Number:</b></label></p>
+    <input type="" placeholder="Enter Phone Number" name="hpno" required>
+
+    <p><label for="email"><b>Email:</b></label></p>
+    <input type="" placeholder="Enter Email" name="email" required>
+    <p>
+        <div class="clearfix">
+            <a href="target.html">
+                <button type="submit" class="savebtn">Save details</button>
+            </a>
+        </div>
+    </p>
+
+</div>
+
+<script>
+    function validateForm() {
+      // Get input values
+      var fullname = document.getElementById('fullname').value;
+      var nric = document.getElementById('nric').value;
+      var hpno = document.getElementById('hpno').value;
+      var email = document.getElementById('email').value;
+
+      // Performing basic validation 
+      if (!fullname || !nric || !hpno || !email) {
+        alert('Please fill in all fields.');
+        return false; 
+      }
+    }
+</script>
+
+</body>
+</html>
